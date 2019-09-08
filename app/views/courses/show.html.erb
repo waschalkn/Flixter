@@ -29,7 +29,9 @@
   <div class="col-12">
     <% @course.sections.each do |section| %>
       <div class="section">
+        <div id="section-name">
         <%= section.title %>
+        </div>
 
         <% section.lessons.each do |lesson| %>
           <div class="lesson">
