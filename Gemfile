@@ -77,3 +77,5 @@ gem 'devise'
 gem 'carrierwave'
 
 gem 'figaro'
+
+gem 'fog-aws'
