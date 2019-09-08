@@ -75,3 +75,5 @@ gem 'simple_form'
 gem 'devise'
 
 gem 'carrierwave'
+
+gem 'figaro'
