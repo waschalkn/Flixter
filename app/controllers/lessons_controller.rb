@@ -9,10 +9,8 @@ before_action :require_authorized_for_current_lesson, only: [:show]
   private
 
   def require_authorized_for_current_lesson
-    if current_user.enrolled_in?(@course) != current_lesson.section.course
-      redirect_to course_path, alert: 'Error Message' 
-    else
-      
+    if current_user.enrolled_in?(current_lesson.section.course) == false
+      redirect_to course_path(current_lesson.section.course), alert: 'Error Message'
     end
   end
 
