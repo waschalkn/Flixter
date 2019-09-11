@@ -8,6 +8,9 @@ before_action :require_authorized_for_current_lesson, only: [:show]
 
   private
 
+  #TODO
+  #----FIX ALERT MESSAGE
+
   def require_authorized_for_current_lesson
     if current_user.enrolled_in?(current_lesson.section.course) == false
       redirect_to course_path(current_lesson.section.course), alert: 'Error Message'
