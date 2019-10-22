@@ -87,9 +87,11 @@ body {
 }
 
 .lesson {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   margin-top: 10px;
   height: 130px;
+  border-radius: 25px;
+  border: solid black 2px;
 }
 
 .lesson a {
@@ -97,6 +99,7 @@ body {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
   font-size: 15px;
+  text-decoration: none;
 }
 
 .lesson a b {
@@ -105,13 +108,15 @@ body {
 }
 
 .lessons li {
-  background: black;
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   margin: 10px;
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
   padding: 8px;
   font-size: 15px;
+  border-radius: 25px;
+  border: solid black 2px;
 }
 
 .lessons li b {

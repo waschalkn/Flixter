@@ -23,6 +23,8 @@
     <br class="clr" />
   <% end %>
 
+  <hr class="col-8 offset-2">
+  <br class="clr" />
 
   <h1>What I'm Teaching</h1>
   <% current_user.courses.each do |course| %>
@@ -31,6 +33,9 @@
     </h3>
 
     <br />
+    <%= image_tag course.image.url, class: 'img-fluid' %>
+    <br />
+    
     <div class="row">
       <div class="col-12 col-sm-8">
         <%= course.description %>
